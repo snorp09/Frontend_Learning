@@ -3,16 +3,20 @@ interface TaskItemProps {
 }
 
 export default function TaskItem(props: TaskItemProps) {
+  const { title, description, complete } = props.task;
+
   return (
     <div>
       <header>
-        <h3>Gemma. (Title)</h3>
+        <h1>{title}</h1>
       </header>
       <div>
-        <p>Body</p>
+        <p>{description}</p>
       </div>
       <footer>
-        <button>Complete</button>
+        <input type="checkbox" id="complete_box" defaultChecked={complete} />
+        <label htmlFor="complete_box">Complete</label>
+        <button>Delete</button>
       </footer>
     </div>
   );

@@ -15,7 +15,7 @@ export default function AppMain(props: AppMainProps) {
           description: "Gemma.",
           id: 0,
           urgency: 0,
-          complete: false,
+          complete: true,
         }}
       />
     </>

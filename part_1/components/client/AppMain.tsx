@@ -9,15 +9,7 @@ interface AppMainProps {
 export default function AppMain(props: AppMainProps) {
   return (
     <>
-      <TaskItem
-        task={{
-          title: "Gemma.",
-          description: "Gemma.",
-          id: 0,
-          urgency: 0,
-          complete: true,
-        }}
-      />
+    {props.data.map(item => <TaskItem key={item.id} task={item} />)}
     </>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import TaskItem from "../TaskItem";
+import TaskItem from "@/components/TaskItem";
 import AddTaskBox from "./AddTaskBox";
 
 interface AppMainProps {

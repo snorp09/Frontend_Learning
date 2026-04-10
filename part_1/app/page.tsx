@@ -1,10 +1,10 @@
-import DataProviderClient from "@/components/client/DataProviderClient";
+import DataProviderShell from "@/components/client/DataProviderShell";
 
 export default function Home() {
   return (
     <div>
       <main>
-        <DataProviderClient />
+        <DataProviderShell />
       </main>
     </div>
   );

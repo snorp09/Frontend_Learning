@@ -4,7 +4,6 @@ Needs to be a client side component to access local storage.
 */
 "use client";
 
-import dynamic from "next/dynamic";
 import useLocalStorage from "use-local-storage"
 
 import AppMain from "@/components/client/AppMain";

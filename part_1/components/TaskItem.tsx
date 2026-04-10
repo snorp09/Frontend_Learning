@@ -1,20 +1,22 @@
+"use client";
+
 interface TaskItemProps {
   task: Task;
 }
 
 export default function TaskItem(props: TaskItemProps) {
-  const { title, description, complete } = props.task;
-
+  const task = props.task;
+  
   return (
     <div>
       <header>
-        <h1>{title}</h1>
+        <h1>{task.title}</h1>
       </header>
       <div>
-        <p>{description}</p>
+        <p>{task.description}</p>
       </div>
       <footer>
-        <input type="checkbox" id="complete_box" defaultChecked={complete} />
+        <input type="checkbox" id="complete_box" defaultChecked={task.complete} />
         <label htmlFor="complete_box">Complete</label>
         <button>Delete</button>
       </footer>
